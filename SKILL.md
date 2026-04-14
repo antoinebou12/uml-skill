@@ -1,5 +1,5 @@
 ---
-name: diagramming-uml
+name: UML
 description: >-
   Authors UML and related text-based diagrams (PlantUML, Mermaid, D2, BPMN, and
   more). When the uml-mcp MCP server is connected, use generate_uml and
