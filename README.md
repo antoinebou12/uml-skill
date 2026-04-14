@@ -6,7 +6,11 @@
 [![uml-mcp](https://img.shields.io/badge/repo-uml--mcp-181717?logo=github)](https://github.com/antoinebou12/uml-mcp)
 [![Kroki](https://img.shields.io/badge/renderer-Kroki-3B82F6)](https://kroki.io/)
 
-**uml-skill** is an agent skill bundle for **text-based UML and diagrams** (PlantUML, Mermaid, D2, BPMN, and more). When the **[uml-mcp](https://github.com/antoinebou12/uml-mcp)** server is connected, agents should call **`generate_uml`** / **`validate_uml`** to return **Kroki-backed URLs** (and optional playground links). Without MCP, you can still build a Kroki GET URL locally with **[scripts/kroki_url.py](scripts/kroki_url.py)** (see [scripts/README.md](scripts/README.md)).
+**uml-skill** is an agent skill bundle for **text-based UML and diagrams** (PlantUML, Mermaid, D2, BPMN, and more). 
+
+When the **[uml-mcp](https://github.com/antoinebou12/uml-mcp)** server is connected, agents should call **`generate_uml`** / **`validate_uml`** to return **Kroki-backed URLs** (and optional playground links). 
+
+Without MCP, you can still build a Kroki GET URL locally with **[scripts/kroki_url.py](scripts/kroki_url.py)** (see [scripts/README.md](scripts/README.md)).
 
 **Canonical Smithery listing:** [diagramming-uml on Smithery](https://smithery.ai/skills/antoinebou12/uml) (`antoinebou12/uml`).
 
