@@ -12,7 +12,7 @@ metadata:
   author: Antoine Boucher
 ---
 
-# Diagramming UML (text diagrams + uml-mcp)
+# UML (text diagrams + uml-mcp)
 
 ## Goal
 
