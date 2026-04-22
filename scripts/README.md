@@ -1,6 +1,6 @@
 # uml-skill scripts
 
-Small **stdlib-only** helpers agents can run without installing uml-mcp.
+Small **stdlib-only** helpers agents can run without installing uml-mcp (see **`kroki_url.py`** below).
 
 ## `kroki_url.py`
 
@@ -9,6 +9,19 @@ Prints a **Kroki GET URL** for diagram source (zlib + base64url, same encoding a
 **When to use:** MCP / `generate_uml` is unavailable and you only need a shareable URL.
 
 **When to prefer uml-mcp:** The server maps **logical** `diagram_type` keys, themes, PlantUML preparation, validation, and fallbacks. This script takes a Kroki **backend** name (`plantuml`, `mermaid`, `d2`, …) and **raw** source—no uml-mcp wrapping.
+
+### uml-mcp logical type vs Kroki `-t` backend
+
+| uml-mcp `diagram_type` (examples) | Typical Kroki `-t` for `kroki_url.py` |
+| --- | --- |
+| `class`, `sequence`, `activity`, `usecase`, … | `plantuml` (PlantUML body, often with `@startuml` … `@enduml`) |
+| `mermaid` | `mermaid` |
+| `d2` | `d2` |
+| `bpmn` | `bpmn` |
+| `c4plantuml` | `c4plantuml` |
+| `wireviz` | `wireviz` |
+
+When unsure, read **`uml://types`** in uml-mcp (each entry lists the **backend** segment Kroki uses).
 
 ### Usage
 
